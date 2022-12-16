@@ -8,10 +8,7 @@ const PORT = 8001;
 // Have Node serve the files for our built React app
 app.use(
   express.static(
-    path.resolve(
-      __dirname,
-      '/home/ubuntu/react/_work/aws-react/aws-react/build'
-    )
+    path.resolve(__dirname, '../../../../react/_work/aws-react/aws-react/build')
   )
 );
 
@@ -24,7 +21,7 @@ app.get('/*', (req, res) => {
   res.sendFile(
     path.resolve(
       __dirname,
-      '/home/ubuntu/react/_work/aws-react/aws-react/build',
+      '../../../../react/_work/aws-react/aws-react/build',
       'index.html'
     )
   );
