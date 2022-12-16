@@ -13,7 +13,7 @@ app.use(
 );
 
 app.get('/api', (req, res) => {
-  res.send('Hello Worls');
+  res.send('Hello lorem ipsum');
 });
 
 // All other GET requests not handled before will return our React app
