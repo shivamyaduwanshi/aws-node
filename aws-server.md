@@ -1,6 +1,10 @@
+# Command to test Nginx configuration
 sudo nginx -t
+
+# Command to restart Nginx
 sudo systemctl restart nginx
 
+# Nginx server block configuration
 server {
     listen 80;
     server_name example.com;
@@ -23,6 +27,7 @@ server {
     }
 }
 
+# Nginx installation on EC2 instance
 1. Install Nginx on your EC2 instance
    sudo apt-get update
    sudo apt-get install nginx
@@ -50,10 +55,7 @@ server {
    sudo nginx -t
    sudo systemctl restart nginx
 
-
-   --------------------------------------------
-   Here's how you can install Node.js on an AWS Ubuntu instance using the command line:
-
+# Node.js installation on AWS Ubuntu instance
 Start an AWS EC2 instance with Ubuntu installed.
 
 Connect to your instance using the terminal or an SSH client.
@@ -61,6 +63,7 @@ Connect to your instance using the terminal or an SSH client.
 Update the package index
 sudo apt update
 sudo apt install nodejs npm
+
+# Check the version of Node.js and NPM
 nodejs -v
 npm -v
-
