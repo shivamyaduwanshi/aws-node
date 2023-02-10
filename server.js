@@ -6,11 +6,11 @@ const app = express();
 const PORT = 8001;
 ///home/ubuntu/react/_work/aws-react/aws-react/build
 // Have Node serve the files for our built React app
-app.use(
-  express.static(
-    path.resolve(__dirname, '../../../../react/_work/aws-react/aws-react/build')
-  )
-);
+// app.use(
+//   express.static(
+//     path.resolve(__dirname, '../../../../react/_work/aws-react/aws-react/build')
+//   )
+// );
 
 app.get('/api', (req, res) => {
   res.send('Hello lorem ipsum');
